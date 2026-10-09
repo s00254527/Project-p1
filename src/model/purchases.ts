@@ -19,11 +19,9 @@ export const PurchaseModel = new Schema<IPurchase>({
 );
 
 //this is just for testing on the routes and ensuring the data is ok. 
-export const purchaseSchema = z.object({
-    make: z.string().min(1, "Make is required"),
-    model: z.string().min(1, "Model is required"),
-    year: z.number().int().min(2026, "Year must be a valid year").max(new Date().getFullYear(), "Year cannot be in the future"),
-    price: z.number().positive("Price must be a positive number"),
-    mileage: z.number().int().nonnegative("Mileage must be a non-negative integer"),
-    date: z.date("Date is required")
+export const purchaseZSchema = z.object({
+    id: z.string(),
+    type:z.string(),
+    amount: z.number(),
+    date: z.date().min(2026).optional(),
 });
