@@ -5,10 +5,9 @@ app.get("/ping", async (_req : Request, res: Response) => {
 
     res.json({ 
 
-    message: "hello from Una  
+    message: "hello from Una "
 
     }); 
-
 }); 
 
  

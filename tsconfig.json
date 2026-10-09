@@ -26,6 +26,6 @@
     "types": ["node"]
   },
 
-  "include": ["src/**/*", "src/controllers/**/*", "src/routes/**/*"],
+  "include": ["**/*.ts", "**/*.cts", "**/*.mts"],
   "exclude": ["node_modules", "build"]
 }
