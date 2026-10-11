@@ -9,9 +9,9 @@ POST {{endpoint}} HTTP/3.0
 Content-Type: application/json
 
 {
-"id":"1",
-"type":"Food",
-"amount":14.95,
+"id":"2",
+"type":"washing",
+"amount":20.99,
 "date":"2026-01-06"
 }
 
@@ -19,16 +19,20 @@ Content-Type: application/json
 @newPurchase = {{postApurchase.response.body._id}}
 GET {{endpoint}}/{{newPurchase}} Http/3.0
 Content-Type: application/json
-###
 
 
-
+### updating purchase but theirs no need to currently 
 @updatePurchase = {{postApurchase.response.body._id}}
 PUT {{endpoint}}/{{updatePurchase}} HTTP/3.0
 Content-Type: application/application/json
 
 {
     "type":"Clothes",
-    "amount":7.46,
+    "amount":7.46
 }
-###
+
+
+### deleting purhcase - I want to elaborate on this in the future. 
+DELETE {{endpoint}}/{{postApurchase.response.body._id}} HTTP/1.1
+
+
