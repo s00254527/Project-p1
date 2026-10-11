@@ -1,7 +1,7 @@
 import {Request,Response,NextFunction} from 'express';
 import {z} from 'zod';
 
-
+//this is all of the clensing and validation for the middleware. 
 export const validate = (Schema: z.ZodObject<any>) =>(
  req:Request, res:Response, next:NextFunction
 ): void => {

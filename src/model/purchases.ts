@@ -23,5 +23,5 @@ export const purchaseZSchema = z.object({
     id: z.string(),
     type:z.string(),
     amount: z.number(),
-    date: z.date().min(2026).optional(),
+    date: z.coerce.date().min(new Date("2026-01-01")),
 });
