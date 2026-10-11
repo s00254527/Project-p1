@@ -3,7 +3,7 @@
     "target": "ES2022",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "outDir": "./build",
+    "outDir": "./",
     "rootDir": "./src",
 
     /* Strict Type-Checking */
@@ -23,9 +23,9 @@
 
     /* Emit & Types */
     "sourceMap": true,
-    "types": ["node"]
+    "types": ["node","vitest/globals"]
   },
 
-  "include": ["src/**/*"],
+  "include": ["src/**/*","test/**/*"],
   "exclude": ["node_modules", "build"]
 }
