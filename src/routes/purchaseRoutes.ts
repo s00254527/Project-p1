@@ -12,6 +12,8 @@ router.get('/:id', purchaseController.getAllPurchases);
 //validations from the middleware that validates that I/the user can submit a purchase. 
 router.post('/', validate(purchaseZSchema), purchaseController.createPurchase);
 
+//update purchases
+router.put('/:id',purchaseController.updatePurchases);
 
 //deletion of a pruchase.Im debating deleting everything after a month but ill have to ask
 //una baout that
