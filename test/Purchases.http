@@ -8,7 +8,11 @@ Content-Type: application/json
 
 
 {
-""
+"id":"1",
+"type":"Food",
+"amount":14.95,
+"date":"1/6/2026"
+
 }
 
 ###

@@ -17,11 +17,6 @@ app.get("/Api/V1/Purchases", async (_req : Request, res: Response) => {
     res.json({message: "Purchases working?"}); 
 }); 
 
- 
-
-app.listen(PORT, () => { 
-    console.log("Server is running on port", PORT); 
-    }); 
 
 const startServer = async() => {
     await connectDB();

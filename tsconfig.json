@@ -4,7 +4,7 @@
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "outDir": "./build",
-    "rootDir": ".",
+    "rootDir": "./src",
 
     /* Strict Type-Checking */
     "strict": true,
@@ -26,6 +26,6 @@
     "types": ["node"]
   },
 
-  "include": ["**/*.ts", "**/*.cts", "**/*.mts"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules", "build"]
 }
