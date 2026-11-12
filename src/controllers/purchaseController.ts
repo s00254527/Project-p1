@@ -2,10 +2,7 @@ import {Request, Response} from "express";
 import { PurchaseService } from "../services/PurchaseService";
 import { IPurchase } from "../model/purchases";
 
-
-
 const purchaseService = new PurchaseService();
-
 
 export class PurchaseController {
     //creating purchase

@@ -23,8 +23,4 @@ export class PurchaseService {
         return await Purchase.findByIdAndDelete(id);
     }
 
-
-
-
-
 }

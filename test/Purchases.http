@@ -10,9 +10,9 @@ Content-Type: application/json
 
 {
 "id":"2",
-"type":"washing",
-"amount":20.99,
-"date":"2026-01-06"
+"type":"Drink",
+"amount":8.65,
+"date":"2026-08-06"
 }
 
 ### getting a purchase (the last one based off of the same id)
@@ -23,18 +23,18 @@ Content-Type: application/json
 
 ### updating purchase but theirs no need to currently 
 
-PUT {{endpoint}}/6acbf0400b4d439aaff9e90d HTTP/3.0
+PUT {{endpoint}}/6acc0b7da61298a23b32a22b HTTP/3.0
 Content-Type: application/json
 
 {
     "type":"Clothes",
-    "amount":7.46
+    "amount":117.46
 }
 
 
 ### deleting purhcase - I want to elaborate on this in the future. 
  
-DELETE {{endpoint}}/6acbeaa90b4d439aaff9e90c HTTP/1.1
+DELETE {{endpoint}}/6acc0e16a998cb3205806a6f HTTP/1.1
 Content-Type: application/json
 ###
 
