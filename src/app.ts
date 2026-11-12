@@ -14,7 +14,7 @@ app.get("/Api/V1/Purchases", async (_req : Request, res: Response) => {
     res.json({message: "Purchases working?"}); 
 }); 
 
-
+//removing this as per request 
 const startServer = async() => {
     await connectDB();
     app.listen(PORT,() =>{
