@@ -9,8 +9,8 @@ POST {{endpoint}} HTTP/3.0
 Content-Type: application/json
 
 {
-"type":"DRINK",
-"amount":8.65,
+"type":"CLOTHES",
+"amount":12.65,
 "date":"2026-08-06"
 }
 
@@ -22,18 +22,19 @@ Content-Type: application/json
 
 ### updating purchase but theirs no need to currently 
 
-PUT {{endpoint}}/6acc0b7da61298a23b32a22b HTTP/3.0
+PUT {{endpoint}}/6afa305e8b75ec46e1a80304 HTTP/3.0
 Content-Type: application/json
 
 {
-    "type":"Clothes",
-    "amount":117.46
+    "type":"DRINK",
+    "amount":117.46,
+    "date":"2026-11-05"
 }
 
 
 ### deleting purhcase - I want to elaborate on this in the future. 
  
-DELETE {{endpoint}}/6acc0e16a998cb3205806a6f HTTP/1.1
+DELETE {{endpoint}}/6afa305e8b75ec46e1a80304 HTTP/1.1
 Content-Type: application/json
 ###
 
