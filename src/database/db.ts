@@ -5,8 +5,8 @@ import mongoose from "mongoose";
 export const connectDB = async () : Promise<void> =>{
     try{
         //console.log(`Connecting to mongoDB at ${env.mongodbUri}`);
-        //const conn = await mongoose.connect(env.mongodbUri);
-        //console.log(`MongoDB connected:${conn.connection.host}`);
+        const conn = await mongoose.connect(env.mongodbUri);
+        console.log(`MongoDB connected:${conn.connection.host}`);
         console.log(`Successful connection!`);
 
     }catch (error){

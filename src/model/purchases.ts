@@ -31,13 +31,12 @@ export const PurchaseModel = new Schema<IPurchase>({
     type: { type: String, enum: Object.values(PurchaseType), required: true },
     amount: { type: Number, required: true },
     date: { type: Date, required: true },
-}, { timestamps: true }
-);
+}); //removed timestamp as theres no need for it 
 
 //this is just for testing on the routes and ensuring the data is ok. 
 export const purchaseZSchema = z.object({
     //id: z.string(),
-    type:z.enum,
+    type:z.enum( PurchaseType),//didnt import this as it caused problems 
     amount: z.number(),
     date: z.coerce.date().min(new Date("2026-01-01")),
 });

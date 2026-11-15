@@ -9,8 +9,7 @@ POST {{endpoint}} HTTP/3.0
 Content-Type: application/json
 
 {
-"id":"2",
-"type":"Drink",
+"type":"DRINK",
 "amount":8.65,
 "date":"2026-08-06"
 }
